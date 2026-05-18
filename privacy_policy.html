@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一球速報 プライバシーポリシー</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #222; }
+  h1 { border-bottom: 2px solid #1E88E5; padding-bottom: 8px; }
+  h2 { margin-top: 2em; border-left: 4px solid #1E88E5; padding-left: 10px; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background: #f4f4f4; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+  a { color: #1E88E5; }
+  .meta { color: #888; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>一球速報 プライバシーポリシー</h1>
+<p class="meta">最終更新日: 2026年5月19日</p>
+
+<p>岩井賢太郎（以下「開発者」）は、iOSアプリ「一球速報」（以下「本アプリ」）におけるユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。</p>
+
+<hr>
+
+<h2>1. 取得する情報</h2>
+<p>本アプリは以下の情報を取得し、利用します。</p>
+
+<h3>1-1. アカウント情報</h3>
+<ul>
+  <li>Google アカウントによるサインイン時に、Google から提供されるメールアドレス、表示名、Google アカウントの一意な識別子（Firebase UID）</li>
+</ul>
+
+<h3>1-2. 利用情報</h3>
+<ul>
+  <li>ユーザーが本アプリ内で登録するチーム情報、選手情報、試合記録、打順、投球記録、得点、観戦コード等</li>
+</ul>
+
+<h3>1-3. デバイス情報</h3>
+<ul>
+  <li>プッシュ通知配信のための APNs デバイストークン</li>
+  <li>アプリのクラッシュ・エラー情報（個人を特定する情報は含みません）</li>
+</ul>
+
+<h3>1-4. 画像情報</h3>
+<ul>
+  <li>メンバー表 OCR 機能を利用する際に、ユーザーが選択・撮影した画像（後述する Gemini API による解析後、原則として保存しません）</li>
+</ul>
+
+<hr>
+
+<h2>2. 情報の利用目的</h2>
+<p>取得した情報は、以下の目的で利用します。</p>
+<ol>
+  <li>本アプリの機能提供（試合記録・観戦・通知等）</li>
+  <li>ユーザーが所属するチームのメンバー間での情報共有</li>
+  <li>プッシュ通知の配信</li>
+  <li>メンバー表 OCR による選手情報の自動入力</li>
+  <li>不具合の調査・改善</li>
+  <li>お問い合わせへの対応</li>
+</ol>
+
+<hr>
+
+<h2>3. 第三者提供・委託先</h2>
+<p>本アプリは、サービス提供のために以下の外部サービスを利用しています。情報はこれらのサービスに送信されますが、それぞれの利用規約・プライバシーポリシーに従って取り扱われます。</p>
+
+<table>
+  <thead>
+    <tr><th>サービス</th><th>提供元</th><th>用途</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Firebase Authentication</td><td>Google LLC</td><td>ログイン認証</td></tr>
+    <tr><td>Firebase Cloud Firestore</td><td>Google LLC</td><td>試合状態のリアルタイム同期</td></tr>
+    <tr><td>Supabase (PostgreSQL)</td><td>Supabase Inc.</td><td>チーム・試合・選手情報の保存</td></tr>
+    <tr><td>Google Cloud Run</td><td>Google LLC</td><td>バックエンドAPIのホスティング</td></tr>
+    <tr><td>Apple Push Notification Service</td><td>Apple Inc.</td><td>プッシュ通知配信</td></tr>
+    <tr><td>Gemini API</td><td>Google LLC</td><td>メンバー表画像のOCR解析</td></tr>
+    <tr><td>Sentry</td><td>Functional Software, Inc.</td><td>エラー情報の記録</td></tr>
+  </tbody>
+</table>
+
+<p>ユーザーが本アプリで登録した情報は、同じチームに所属する他のメンバーに共有されることがあります（例: 試合記録、選手情報、打順）。</p>
+
+<p>上記以外の第三者に、ユーザーの個人情報を提供することはありません。ただし、法令に基づく開示請求があった場合はこの限りではありません。</p>
+
+<hr>
+
+<h2>4. データの保管期間</h2>
+<ul>
+  <li>ユーザーが本アプリを継続して利用している間、登録情報は保持されます。</li>
+  <li>アカウント削除のリクエストがあった場合、開発者は合理的な期間内に対象データを削除します。</li>
+  <li>法令により保管が義務付けられている場合は、その期間保管します。</li>
+</ul>
+
+<hr>
+
+<h2>5. データの削除・退会</h2>
+<p>アカウント削除を希望する場合は、後述のお問い合わせ先までご連絡ください。チームから退会する操作はアプリ内から可能です。</p>
+
+<hr>
+
+<h2>6. 子どもの個人情報</h2>
+<p>本アプリは少年野球の試合記録を主な目的としており、未成年者の選手情報（氏名、学年、背番号等）が登録されることがあります。これらは保護者・チーム関係者の責任のもとで登録・管理されることを前提としています。</p>
+<p>本アプリは13歳未満のユーザー自身による登録は想定していません。13歳未満の選手情報は、保護者または所属チームの管理者が責任を持って登録してください。</p>
+
+<hr>
+
+<h2>7. セキュリティ</h2>
+<p>本アプリは、通信時に HTTPS による暗号化を行い、データの保護に努めています。ただし、インターネット上の通信について100%の安全性を保証するものではありません。</p>
+
+<hr>
+
+<h2>8. プライバシーポリシーの変更</h2>
+<p>本ポリシーは、必要に応じて変更されることがあります。変更があった場合、本ページに掲載することで通知します。</p>
+
+<hr>
+
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+<ul>
+  <li>開発者: 岩井賢太郎</li>
+  <li>連絡先: <a href="mailto:kentaro.wdc@gmail.com">kentaro.wdc@gmail.com</a></li>
+</ul>
+
+</body>
+</html>
